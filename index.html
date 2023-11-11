@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>PoGos - Home</title>
+		<link rel="stylesheet" href="index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+	<div class="contr">
+        <div class="head">
+            <img class=logo src="POGOS.png">
+            <div class="navbar">
+                <a href="registration.html">Авторизация</a>
+                <a href="#news">Новости</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Животные 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="catalog.html">Собаки</a>
+                        <a href="catalog.html">Кошки</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="line">
+            </div>
+        </div>
+        <div class = "big_image">
+            <img class=image_1 src="image 1 (1).png">
+        </div>
+        <div class = "first_content">
+            <img class=in_first src="Group 1 (4).png">
+            <div class = "sys"><p class = first>Pogos - web - сайт для связи нового хозяина с<br> животным. Размещение <br>объявлений с животными из разных приютов</p></div>
+        </div>
+        <div class = "second_content">
+            <div class = 'life_rent'>
+                <h1 class = sh1>О приютах</h1>
+                <img class=dog src="pngwing 4.png">
+                <p class = second>- Проект «Жизнь в аренду». Сбор средств на выкуп<br>
+                здания для уже давно существующего приюта с<br>
+                животными. Предлагаем к просмотру видео-ролик о<br>
+                приюте и наших подопечных.<br></p>
+            </div>
+        <img class=dog1 src="image 2.png">
+        <p class = third>- Воспитываем у детей любовь к<br> животным. Тесный контакт с<br> природой - хорошая школа<br> воспитания у детей чувства доброты,<br> справедливости, милосердия
+и чуткости.</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+               
+                    <img src="Group 4 (1).png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="Group 4 (2).png" style="width:100%"></a>
+            </div>
+            <div class="mySlides fade">
+                <img src="Group 4 (3).png" style="width:100%"></a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+<br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <div class = "donate">
+        <h1 class = th1>Отправьте пожертвование</h1>
+        <div class='vvod'>
+            <input type="email" name="auth_email" placeholder="1000$" required >
+        </div>
+    </div>
+    <div class="footer">
+        <h1 class = inf>Информация о нас:</h1>
+        <p class = infe>С понедельника по субботу с 11 до 19 часов. Воскресенье: ВЫХОДНОЙ.<br>
+        Телефон: +7(777) 777-66-66 / E-mail: pogos_vip@gmail.com</p>
+    </div>
+    </div>
+    </body>
+</html>

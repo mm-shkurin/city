@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.head{
+    width: 100%;
+}
+.navbar {
+    overflow: hidden;
+    font-family:sans-serif;
+    display: inline-block;
+    margin-left: 27%;
+    margin-top: 1%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #5C5C5C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: 5C5C5C;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover {
+    color: 6877FD;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:#c7c7c7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color:#797979;
+    margin-top: 10;
+}
+.first_content{
+    margin: 3% 14.5% 0.69% 11.5%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 10%);
+    height: 60%;
+    padding: 20;
+}
+.in_first{
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.first{
+    font-size: 28;
+    padding-top: 12%;
+    font-family: sans-serif;
+}
+.sys{
+    margin-top: 10;
+}
+.second_content{
+    margin: 0% 7.5% 0.69% 5.5%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 10%);
+    height: 120%;
+}
+.sh1{
+    text-align: center;
+    color: white;
+    background-color: #6877FD;
+    border-radius: 30px 20px 0px 0px;
+    font-family: sans-serif;
+    height: 7%;
+    padding-top: 10;
+}
+.life_rent{
+  height: 60%;
+}
+.dog{
+    float: left;
+}
+.second{
+    font-family: sans-serif;
+    font-size: 28px;
+    padding: 14% 0% 0% 30%;
+}
+.dog1{
+    float: left;
+    margin-left: 3%;
+
+}
+.third{
+    font-family: sans-serif;
+    font-size: 28px;
+    padding: 0% 0% 0% 45%;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+  margin-top: 30;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.vvod input{
+    font-size: 22;
+    display: block;
+    margin: 0 auto;
+    width: 81%;
+    height: 14%;
+    border-radius: 30px;  
+    border:none;
+    outline: none;
+    border: solid 1px #c7c7c7;
+    text-align: center;
+    margin-block: 20px;
+  }
+  input:focus {
+    color: #000000;
+    border-radius: 10px;
+    border: 2px solid #EA2727;
+  }
+.donate{
+    margin: 3% 14.5% 0.69% 11.5%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 10%);
+}
+.th1{
+    font-family: sans-serif;
+    padding-top: 10;
+    text-align: center;
+} 
+.inf{
+  font-family: sans-serif;
+  color: #f2f2f2;
+}
+.infe{
+  font-family: sans-serif;
+  color: #f2f2f2;
+  font-size: 23;
+}
+.footer{
+  background-color: #6877FD;
+}
